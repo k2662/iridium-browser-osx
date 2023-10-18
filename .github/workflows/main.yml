@@ -14,4 +14,4 @@ jobs:
       - name: make dirs
         run: mkdir Iridium_OSX && cd Iridium_OSX
       - name: build
-        run: ./build.sh
+        run: ./build.sh -m iad
