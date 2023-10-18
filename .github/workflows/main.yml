@@ -10,6 +10,8 @@ jobs:
     name: Build Iridium
     runs-on: macos-latest
     steps:
+      - name: install deps
+        run: brew install python
       - uses: actions/checkout@v1
       - name: make dirs
         run: mkdir Iridium_OSX && cd Iridium_OSX
