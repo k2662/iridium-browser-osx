@@ -1,0 +1,17 @@
+name: Build Iridium
+
+on: 
+  push:
+      branches:
+      - master
+
+jobs: 
+  Build_Iridium:
+    name: Build Iridium
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: make dirs
+        run: mkdir Iridium_OSX && cd Iridium_OSX
+      - name: build
+        run: ./build.sh
