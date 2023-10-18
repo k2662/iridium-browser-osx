@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # Iridium browser OSX finding signing identity information script
 # Copyright (C) 2015 struktur AG <opensource@struktur.de>
